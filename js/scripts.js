@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  $("form#lang-quiz").submit(function(event) {
+  $("#start-Quiz").click(function() {
+    $("#lang-Quiz, #output").fadeIn();
+    
+  });
+
+  $("form#lang-Quiz").submit(function(event) {
     event.preventDefault();
     const q1 = $("input:radio[name=question1]:checked").val();
     const q2 = $("input:radio[name=question2]:checked").val();
