@@ -14,3 +14,14 @@ body  {
 #lang-Quiz, #output {
   display: none;
 }
+#output {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  padding: 2%;
+  font-weight: bold;
+}
+#output-des {
+  text-align: center;
+  font-weight: normal;
+}
