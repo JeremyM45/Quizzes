@@ -15,17 +15,23 @@ body  {
   left: 40%;
   width: 20%;
 } */
-#lang-Quiz, #output, #output-Des {
+#lang-Quiz, #output, #outputDescription {
   display: none;
+}
+#outputName {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: -4%;
+  padding: 2%;
+  font-weight: bold;
 }
 #output {
   text-align: center;
-  margin-top: 10%;
   margin-bottom: 2%;
   padding: 2%;
   font-weight: bold;
 }
-#output-Des {
+#outputDescription {
   text-align: center;
   font-weight: normal;
 }
@@ -82,6 +88,6 @@ body  {
   margin-bottom: -1.5%;
   font-family: "Gill Sans", sans-serif;
 }
-#output, #output-Des {
+#output, #outputDescription, #outputName {
   font-family: 'Times New Roman', Times, serif;
 }
