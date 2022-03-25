@@ -32,4 +32,10 @@ $(document).ready(function() {
     $("#output").text(result);
     $("#output-des").text(description);
   });
+  $("button.dm-BTN").click(function() {
+    $("body").toggleClass("darkMode")
+    $(".btn").toggleClass("btn-DarkMode")
+    $(".page-header").toggleClass("header-DM")
+    $(".dm-BTN").toggleClass("dm-BTN-DM");
+  });
 });
