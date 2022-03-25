@@ -1,17 +1,21 @@
 body  {
   background-color: antiquewhite;
 }
-.page-header  {
+.page-Header  {
   background-color: rgb(21, 155, 233);
   text-align: center;
   border: 3px solid rgb(255, 38, 0);
+  font-family: cursive;
+}
+.page-Header h2 {
+  font-weight: bolder;
 }
 #start-Quiz {
   position: relative;
   left: 40%;
   width: 20%;
 }
-#lang-Quiz, #output {
+#lang-Quiz, #output, #output-Des {
   display: none;
 }
 #output {
@@ -21,7 +25,7 @@ body  {
   padding: 2%;
   font-weight: bold;
 }
-#output-des {
+#output-Des {
   text-align: center;
   font-weight: normal;
 }
