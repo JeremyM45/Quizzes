@@ -13,36 +13,22 @@ $(document).ready(function() {
       result = "Go"
     } else if (q1 === "answer1" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer1" || q1 === "answer1" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2" || q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1" || q1 === "answer1" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2" || q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2" || q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer1" || q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer1" || q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1") {
       result = "C#" 
-    }  else if (q1 === "answer1" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1") {
+    }  else if (q1 === "answer1" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1" || q1 === "answer1" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2" || q1 === "answer1" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer1" || q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer2" || q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1" || q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2" || q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1" || q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2") {
       result = "JavaScript"
     }  else if ((q1 === "answer1" && q2 === "answer2" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2")) {
       result = "res7"
-    }  else if ((q1 === "answer1" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2")) {
-      result = "res8"
     } else if ((q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2")) {
       result = "res11"
-    } else if ((q1 === "answer1" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer1")) {
-      result = "res12"
     } else if ((q1 === "answer1" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2")) {
       result = "res13"
-    } else if ((q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer2")) {
-      result = "res16"
     } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer1")) {
       result = "res17"
-    } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1")) {
-      result = "res18"
     }  else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1")) {
       result = "res19"
-    }  else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2")) {
-      result = "res22"
     }  else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2")) {
       result = "res23"
-    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1")) {
-      result = "res24"
     } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2")) {
       result = "res26"
-    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2")) {
-      result = "res29"
     } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer1" && q5 === "answer2")) {
       result = "res30"
     }
