@@ -10,11 +10,11 @@ body  {
 .page-Header h2 {
   font-weight: bolder;
 }
-#start-Quiz {
+/* #start-Quiz {
   position: relative;
   left: 40%;
   width: 20%;
-}
+} */
 #lang-Quiz, #output, #output-Des {
   display: none;
 }
@@ -40,10 +40,10 @@ body  {
 }
 .dm-BTN {
   position: relative;
-  bottom: 110px;
+  bottom: 83px;
   left: 5px;
   background-color: rgb(21, 155, 233);
-  border: 1px solid black;
+  border: none;
 }
 .dm-BTN:hover {
   background-color: rgb(0, 81, 255);
