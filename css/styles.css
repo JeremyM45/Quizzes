@@ -50,15 +50,15 @@ body  {
 }
 .darkMode {
   background-color: black;
-  color: white;
+  color: antiquewhite;
 }
 .btn-DarkMode {
   background-color: black;
-  color: white;
-  border: 1px solid white;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
 }
 .btn-DarkMode:hover  {
-  background-color: white;
+  background-color: antiquewhite;
   color: black;
 }
 .header-DM {
@@ -67,8 +67,21 @@ body  {
 }
 .dm-BTN-DM  {
   background-color: rgb(126, 5, 5);
-  color: white;
+  color:antiquewhite
 }
 .dm-BTN-DM:hover  {
   background-color: rgb(207, 10, 10);
+}
+.question  {
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: -3%;
+  font-family: Georgia, serif;
+}
+.radio  {
+  margin-bottom: -1.5%;
+  font-family: "Gill Sans", sans-serif;
+}
+#output, #output-Des {
+  font-family: 'Times New Roman', Times, serif;
 }
