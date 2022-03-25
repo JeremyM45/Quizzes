@@ -20,9 +20,9 @@ _This webpage contains a quiz of five questions with two possible answers each f
 (Users/Username/Desktop/Programming-language-suggester)
 * Open index.html file in your browser
 (Users/Username/Desktop/Programming-language-suggester/index.html)
-* Enter name in input box and hit "Submit"
+* Enter name in input box and hit "Start Quiz"
 * Once the quiz displays select the radio button by clicking on it for your desired answer to each question.
-* Click "Submit" at the bottom of the quiz once all questions have your desired answer
+* Click "Program-O-Suggest-O" at the bottom of the quiz once all questions have your desired answer
 * Results will display on the right
 * You can reselect answers and resubmit quiz as many times as you want without refreshing the page
 
