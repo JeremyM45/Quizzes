@@ -10,26 +10,37 @@ body  {
 .page-Header h2 {
   font-weight: bolder;
 }
-/* #start-Quiz {
+#startQuiz {
+  text-align: center;
   position: relative;
-  left: 40%;
-  width: 20%;
-} */
-#lang-Quiz, #output, #outputDescription {
+  width: 30%;
+}
+#startQuizBTN {
+  margin-top: 2%;
+  background-color: antiquewhite;
+  color: black;
+  border: 1px solid black;
+}
+
+#lang-Quiz, .output, #outputDescription {
   display: none;
 }
 #outputName {
   text-align: center;
   margin-top: 10%;
-  margin-bottom: -4%;
+  margin-bottom: -1%;
   padding: 2%;
   font-weight: bold;
 }
-#output {
+.output {
+  position: relative;
+  left: 30%;
   text-align: center;
   margin-bottom: 2%;
-  padding: 2%;
-  font-weight: bold;
+  width: 40%;
+  font-weight: bolder;
+  border: 2px solid rgb(21, 155, 233);
+  background-color: rgb(21, 155, 233);
 }
 #outputDescription {
   text-align: center;
@@ -56,15 +67,15 @@ body  {
 }
 .darkMode {
   background-color: black;
-  color: antiquewhite;
+  color: white;
 }
 .btn-DarkMode {
   background-color: black;
-  color: antiquewhite;
-  border: 1px solid antiquewhite;
+  color: white;
+  border: 1px solid white;
 }
 .btn-DarkMode:hover  {
-  background-color: antiquewhite;
+  background-color: white;
   color: black;
 }
 .header-DM {
@@ -73,10 +84,20 @@ body  {
 }
 .dm-BTN-DM  {
   background-color: rgb(126, 5, 5);
-  color:antiquewhite
+  color:white;
 }
 .dm-BTN-DM:hover  {
   background-color: rgb(207, 10, 10);
+}
+.outputDM {
+  position: relative;
+  left: 30%;
+  text-align: center;
+  margin-bottom: 2%;
+  width: 40%;
+  font-weight: bolder;
+  border: 2px solid rgb(126, 5, 5);
+  background-color: rgb(126, 5, 5);
 }
 .question  {
   position: relative;
@@ -88,6 +109,6 @@ body  {
   margin-bottom: -1.5%;
   font-family: "Gill Sans", sans-serif;
 }
-#output, #outputDescription, #outputName {
+.output, #outputDescription, #outputName {
   font-family: 'Times New Roman', Times, serif;
 }
