@@ -41,6 +41,38 @@ $(document).ready(function() {
       result = "res15"
     } else if ((q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer2")) {
       result = "res16"
+    } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer1")) {
+      result = "res17"
+    } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1")) {
+      result = "res18"
+    }  else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1")) {
+      result = "res19"
+    } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2")) {
+      result = "res20"
+    } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer2" && q5 === "answer1")) {
+      result = "res21"
+    }  else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2")) {
+      result = "res22"
+    }  else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2")) {
+      result = "res23"
+    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1")) {
+      result = "res24"
+    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1")) {
+      result = "res25"
+    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2")) {
+      result = "res26"
+    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer1")) {
+      result = "res27"
+    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2")) {
+      result = "res28"
+    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2")) {
+      result = "res29"
+    } else if ((q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer1" && q5 === "answer2")) {
+      result = "res30"
+    } else if ((q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer2")) {
+      result = "res31"
+    }else if (q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer1") {
+      result = "res32"
     }
     $("#output").text(result);
   });
