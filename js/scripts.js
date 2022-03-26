@@ -4,7 +4,8 @@ $(document).ready(function() {
     e.preventDefault();
     $("#startQuiz").hide();
     $("#lang-Quiz").fadeIn();
-    name = $("#name").val() + ", Program-O-Suggest-O says the language for you is:";
+    $("#cheese-Quiz").fadeIn()
+    name = $("#name").val()
   });
   $("form#lang-Quiz").submit(function(event) {
     event.preventDefault();
@@ -22,7 +23,7 @@ $(document).ready(function() {
       $("#outputName").hide();
       $("#outputDescription").hide();
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name).fadeIn(500);
+      $("#outputName").text(name + ", Program-O-Suggest-O says the language for you is:").fadeIn(500);
       $("#outputDescription").text(description).fadeIn(1000);
     } else if (q1 === "answer1" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer1" || q1 === "answer1" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2" || q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1" || q1 === "answer1" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2" || q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2" || q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer1" || q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1") {
       result = " C#";
@@ -31,7 +32,7 @@ $(document).ready(function() {
       $("#outputName").hide();
       $("#outputDescription").hide();
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name).fadeIn(500);
+      $("#outputName").text(name + ", Program-O-Suggest-O says the language for you is:").fadeIn(500);
       $("#outputDescription").text(description).fadeIn(1000);
     }  else if (q1 === "answer1" && q2 === "answer2" && q3 === "answer2" && q4 === "answer2" && q5 === "answer1" || q1 === "answer1" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2" || q1 === "answer1" && q2 === "answer1" && q3 === "answer1" && q4 === "answer2" && q5 === "answer1" || q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer2" || q1 === "answer2" && q2 === "answer2" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1" || q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2" || q1 === "answer2" && q2 === "answer1" && q3 === "answer2" && q4 === "answer1" && q5 === "answer1" || q1 === "answer2" && q2 === "answer1" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2") {
       result = " JavaScript";
@@ -40,7 +41,7 @@ $(document).ready(function() {
       $("#outputName").hide();
       $("#outputDescription").hide();
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name).fadeIn(500);
+      $("#outputName").text(name + ", Program-O-Suggest-O says the language for you is:").fadeIn(500);
       $("#outputDescription").text(description).fadeIn(1000);
     }  else if (q1 === "answer1" && q2 === "answer2" && q3 === "answer1" && q4 === "answer2" && q5 === "answer2" || q1 === "answer1" && q2 === "answer1" && q3 === "answer2" && q4 === "answer2" && q5 === "answer2" || q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer1" || q1 === "answer2" && q2 === "answer2" && q3 === "answer1" && q4 === "answer1" && q5 === "answer2") {
       result = " Python";
@@ -49,7 +50,7 @@ $(document).ready(function() {
       $("#outputName").hide();
       $("#outputDescription").hide();
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name).fadeIn(500);
+      $("#outputName").text(name + ", Program-O-Suggest-O says the language for you is:").fadeIn(500);
       $("#outputDescription").text(description).fadeIn(1000);
     } else  {
       result = " Ruby";
@@ -58,9 +59,10 @@ $(document).ready(function() {
       $("#outputName").hide();
       $("#outputDescription").hide();
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name).fadeIn(500);
+      $("#outputName").text(name + ", Program-O-Suggest-O says the language for you is:").fadeIn(500);
       $("#outputDescription").text(description).fadeIn(1000);
-    } 
+    }
+    $("#other-quiz").fadeIn() 
   });
   $("button.dm-BTN").click(function() {
     $("body").toggleClass("darkMode");
@@ -68,5 +70,55 @@ $(document).ready(function() {
     $(".page-Header").toggleClass("header-DM");
     $(".dm-BTN").toggleClass("dm-BTN-DM");
     $(".output").toggleClass("outputDM");
+  });
+  $("form#cheese-Quiz").submit(function(e)  {
+    e.preventDefault();
+    const q1=parseInt($("input:radio[name=question1]:checked").val());
+    const q2=parseInt($("input:radio[name=question2]:checked").val());
+    const q3=parseInt($("input:radio[name=question3]:checked").val());
+    const q4=parseInt($("input:radio[name=question4]:checked").val());
+    const q5=parseInt($("input:radio[name=question5]:checked").val());
+    const resultNum = q1 + q2 + q3 + q4 + q5;
+    let result = "";
+    let description = "";
+    console.log(resultNum)
+    if (resultNum === 6 || resultNum === 8 || resultNum === 10 || resultNum === 12) {
+      result = "Cheddar";
+      description = "Cheddar cheese, the most widely purchased and eaten cheese in the world is always made from cow's milk. It is a hard and natural cheese that has a slightly crumbly texture if properly cured and if it is too young, the texture is smooth. It gets a sharper taste as it matures, over a period of time between 9 to 24 months. Shaped like a drum, 15 inches in diameter, Cheddar cheese is natural rind bound in cloth while its colour generally ranges from white to pale yellow. However, some Cheddars may have a manually added yellow-orange colour.";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of cheese you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else if (resultNum === 5 || resultNum === 7 || resultNum === 9 || resultNum === 11) {
+      result = "Provalone";
+      description = "Provolone is an Italian cheese made from cow’s milk whose origins lie in Southern Italy. Today, the major production of Provolone takes place in the Po valley region, particularly Lombardy and Veneto. Both Provolone Valpadana and Provolone del Monaco are granted DOP designation by the European Union to ensure that cheese is produced under strict supervision using specific methods to guarantee supreme quality.";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of cheese you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else if (resultNum === 14 || resultNum === 16 || resultNum === 18 || resultNum === 20)  {
+      result = "Mozzarella";
+      description = "Mozzarella cheese is a sliceable curd cheese originating in Italy. Traditional Mozzarella cheese is made from milk of water buffalos herded in very few countries such as Italy and Bulgaria. As a result, most of the Mozzarella cheeses available now are made from cow's milk.";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of cheese you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else {
+      result = "Smoked Gouda";
+      description = "Gouda, or 'How-da' as the locals say, is a Dutch cheese named after the city of Gouda in the Netherlands. If truth be told, it is one of the most popular cheeses in the world, accounting for 50 to 60 percent of the world's cheese consumption. Smoked Gouda is a variant of this famous cheese wherein it is smoked in ancient brick ovens over flaming hickory chip embers. Sensational with beer, this hard cheese has an edible, brown rind and a creamy, yellow interior.";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of cheese you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    }
+    $("#other-quiz").fadeIn()
   });
 });

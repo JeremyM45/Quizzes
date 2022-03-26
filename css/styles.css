@@ -22,7 +22,7 @@ body  {
   border: 1px solid black;
 }
 
-#lang-Quiz, .output, #outputDescription {
+#lang-Quiz, .output, #outputDescription, #cheese-Quiz, #other-quiz {
   display: none;
 }
 #outputName {
@@ -112,4 +112,8 @@ body  {
 }
 .output, #outputDescription, #outputName {
   font-family: 'Times New Roman', Times, serif;
+}
+#other-quiz {
+  position: relative;
+  left: 68%;
 }
