@@ -121,4 +121,16 @@ $(document).ready(function() {
     }
     $("#other-quiz").fadeIn()
   });
+  $("form#3rd-Quiz").submit(function(e) {
+    e.preventDefault();
+    const q1 = $("#question1").val().length;
+    const q2 = $("#question2").val().length;
+    const q3 = $("#question3").val().length;
+    const q4 = $("#question4").val().length;
+    const q5 = $("#question5").val().length;
+    const q6 = $("#question6").val().length;
+    const resultNum = q1 + q2 + q3 + q4 + q5 + q6;
+    console.log(resultNum);
+
+  });
 });

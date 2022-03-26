@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>The Cheese Quiz</title>
+</head>
+<body>
+  <div class="container">
+    <div class="page-Header">
+      <h2 class="header">What Cheese Are You?</h2>
+      <h4 class="header">Answer The Questions To Find Out What Kind of Cheese You Are</h4>
+    </div>
+    <button class="dm-BTN">Dark Mode</button>
+    <div class="row">
+      <form id="startQuiz">
+        <label>
+          Enter Name
+          <input id="name" type="text">
+        </label>
+        <button type="submit" id="startQuizBTN">Start Quiz</button>
+      </form>
+      <div class="col-lg-6">
+        <form id="3rd-Quiz">
+          <label for="question">1st Question
+            <input id="question1" type="text">
+          </label>
+          <label for="question">2nd Question
+            <input id="question2" type="text">
+          </label>
+          <label for="question">3rd Question
+            <input id="question3" type="text">
+          </label>
+          <label for="question">4th Question
+            <input id="question4" type="text">
+          </label>
+          <label for="question">5th Question
+            <input id="question5" type="text">
+          </label>
+          <label for="question">6th Question
+            <input id="question6" type="text">
+          </label>
+          <button type="submit" class="btn">3rd quiz</button>
+        </form>
+      </div>
+      <div class=col-lg-6>
+        <h4 id="outputName"></h4>
+        <h1 class="output"></h1>
+        <h4 id="outputDescription"></h4>
+      </div>
+    </div>
+    <p id="other-quiz">Check Out: <a href="index.html">Program-O-Suggest-O</a></p>
+  </div>
+</body>
+</html>
