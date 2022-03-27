@@ -6,7 +6,7 @@ $(document).ready(function() {
     $("#lang-Quiz").fadeIn();
     $("#cheese-Quiz").fadeIn();
     $("#thrd-Quiz").fadeIn();
-    name = $("#name").val()
+    name = $("#name").val();
   });
   $("form#lang-Quiz").submit(function(event) {
     event.preventDefault();
@@ -63,7 +63,7 @@ $(document).ready(function() {
       $("#outputName").text(name + ", Program-O-Suggest-O says the language for you is:").fadeIn(500);
       $("#outputDescription").text(description).fadeIn(1000);
     }
-    $("#other-quiz").fadeIn() 
+    $("#other-quiz").fadeIn(); 
   });
   $("button.dm-BTN").click(function() {
     $("body").toggleClass("darkMode");
@@ -119,7 +119,7 @@ $(document).ready(function() {
       $("#outputName").text(name + ", The kind of cheese you are is:").fadeIn(500);
       $("#outputDescription").text(description).fadeIn(1000);
     }
-    $("#other-quiz").fadeIn()
+    $("#other-quiz").fadeIn();
   });
   $("form#thrd-Quiz").submit(function(e) {
     e.preventDefault();
@@ -131,9 +131,8 @@ $(document).ready(function() {
     const q6 = $("#question6").val().length;
     const resultNum = q1 + q2 + q3 + q4 + q5 + q6;
     let result = "";
-    console.log(resultNum);
     if (resultNum >= 24 && resultNum < 32) {
-      result = "The M4 Sherman";
+      result = "M4 Sherman";
       $(".output").hide();
       $("#outputC").hide();
       $("#outputT").hide();
@@ -141,10 +140,10 @@ $(document).ready(function() {
       $("#outputIS").hide();
       $("#outputKT").hide();
       $("#outputBS").hide();
-      $("#outputName").hide();
+      $("#outputNameWWII").hide();
       $("#outputS").show().fadeIn(500);
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
+      $("#outputNameWWII").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
     } else if (resultNum >= 32 && resultNum < 40) {
       result = "T-34";
       $(".output").hide();
@@ -154,12 +153,12 @@ $(document).ready(function() {
       $("#outputIS").hide();
       $("#outputKT").hide();
       $("#outputBS").hide();
-      $("#outputName").hide();
+      $("#outputNameWWII").hide();
       $("#outputT").show().fadeIn(500);
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
+      $("#outputNameWWII").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
     } else if (resultNum >= 40 && resultNum < 48) {
-      result = "The Tiger II/King Tiger";
+      result = "Tiger II";
       $(".output").hide();
       $("#outputS").hide();
       $("#outputT").hide();
@@ -167,10 +166,10 @@ $(document).ready(function() {
       $("#outputIS").hide();
       $("#outputC").hide();
       $("#outputBS").hide();
-      $("#outputName").hide();
+      $("#outputNameWWII").hide();
       $("#outputKT").show().fadeIn(500);
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
+      $("#outputNameWWII").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
     } else if (resultNum >= 48 && resultNum < 56) {
       result = "Churchill";
       $(".output").hide();
@@ -180,10 +179,10 @@ $(document).ready(function() {
       $("#outputIS").hide();
       $("#outputKT").hide();
       $("#outputBS").hide();
-      $("#outputName").hide();
+      $("#outputNameWWII").hide();
       $("#outputC").show().fadeIn(500);
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
+      $("#outputNameWWII").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
     } else if (resultNum >= 56 && resultNum < 64) {
       result = "B1";
       $(".output").hide();
@@ -193,10 +192,10 @@ $(document).ready(function() {
       $("#outputIS").hide();
       $("#outputKT").hide();
       $("#outputBS").hide();
-      $("#outputName").hide();
+      $("#outputNameWWII").hide();
       $("#outputB").show().fadeIn(500);
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
+      $("#outputNameWWII").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
     } else if (resultNum >= 64 && resultNum <72)  {
       result = "IS-2";
       $(".output").hide();
@@ -206,12 +205,12 @@ $(document).ready(function() {
       $("#outputB").hide();
       $("#outputKT").hide();
       $("#outputBS").hide();
-      $("#outputName").hide();
+      $("#outputNameWWII").hide();
       $("#outputIS").show().fadeIn(500);
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
+      $("#outputNameWWII").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
     } else  {
-      result = "The Bob Semple";
+      result = "Bob Semple";
       $(".output").hide();
       $("#outputS").hide();
       $("#outputT").hide();
@@ -219,11 +218,11 @@ $(document).ready(function() {
       $("#outputB").hide();
       $("#outputIS").hide();
       $("#outputKT").hide();
-      $("#outputName").hide();
+      $("#outputNameWWII").hide();
       $("#outputBS").show().fadeIn(500);
       $(".output").text(result).fadeIn(500);
-      $("#outputName").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
+      $("#outputNameWWII").text(name + ", The kind of WWII tank you are is:").fadeIn(500);
     }
-    $("#other-quiz").fadeIn()
+    $("#other-quizWWII").fadeIn();
   });
 });

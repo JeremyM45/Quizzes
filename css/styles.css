@@ -24,12 +24,18 @@ body  {
   border: 1px solid black;
 }
 
-#lang-Quiz, .output, #outputDescription, #cheese-Quiz, #other-quiz, #thrd-Quiz, #outputBS, #outputS, #outputKT, #outputT, #outputC, #outputB, #outputIS {
+#lang-Quiz, .output, #outputDescription, #cheese-Quiz, #other-quiz, #other-quizWWII, #thrd-Quiz, #outputBS, #outputS, #outputKT, #outputT, #outputC, #outputB, #outputIS {
   display: none;
 }
 #outputName {
   text-align: center;
   margin-top: 10%;
+  margin-bottom: -1%;
+  padding: 2%;
+  font-weight: bold;
+}
+#outputNameWWII {
+  text-align: center;
   margin-bottom: -1%;
   padding: 2%;
   font-weight: bold;
@@ -112,12 +118,16 @@ body  {
   margin-bottom: -1.5%;
   font-family: "Gill Sans", sans-serif;
 }
-.output, #outputDescription, #outputName {
+.output, #outputDescription, #outputName, #outputNameWWII {
   font-family: 'Times New Roman', Times, serif;
 }
 #other-quiz {
   position: relative;
   left: 58%;
+}
+#other-quizWWII {
+  position: relative;
+  left: 18%;
 }
 img {
   position: relative;
