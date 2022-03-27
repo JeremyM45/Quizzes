@@ -22,7 +22,7 @@ body  {
   border: 1px solid black;
 }
 
-#lang-Quiz, .output, #outputDescription, #cheese-Quiz, #other-quiz {
+#lang-Quiz, .output, #outputDescription, #cheese-Quiz, #other-quiz, #thrd-Quiz {
   display: none;
 }
 #outputName {

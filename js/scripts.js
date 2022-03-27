@@ -4,7 +4,8 @@ $(document).ready(function() {
     e.preventDefault();
     $("#startQuiz").hide();
     $("#lang-Quiz").fadeIn();
-    $("#cheese-Quiz").fadeIn()
+    $("#cheese-Quiz").fadeIn();
+    $("#thrd-Quiz").fadeIn();
     name = $("#name").val()
   });
   $("form#lang-Quiz").submit(function(event) {
@@ -81,7 +82,6 @@ $(document).ready(function() {
     const resultNum = q1 + q2 + q3 + q4 + q5;
     let result = "";
     let description = "";
-    console.log(resultNum)
     if (resultNum === 6 || resultNum === 8 || resultNum === 10 || resultNum === 12) {
       result = "Cheddar";
       description = "Cheddar cheese, the most widely purchased and eaten cheese in the world is always made from cow's milk. It is a hard and natural cheese that has a slightly crumbly texture if properly cured and if it is too young, the texture is smooth. It gets a sharper taste as it matures, over a period of time between 9 to 24 months. Shaped like a drum, 15 inches in diameter, Cheddar cheese is natural rind bound in cloth while its colour generally ranges from white to pale yellow. However, some Cheddars may have a manually added yellow-orange colour.";
@@ -121,7 +121,7 @@ $(document).ready(function() {
     }
     $("#other-quiz").fadeIn()
   });
-  $("form#3rd-Quiz").submit(function(e) {
+  $("form#thrd-Quiz").submit(function(e) {
     e.preventDefault();
     const q1 = $("#question1").val().length;
     const q2 = $("#question2").val().length;
@@ -130,7 +130,66 @@ $(document).ready(function() {
     const q5 = $("#question5").val().length;
     const q6 = $("#question6").val().length;
     const resultNum = q1 + q2 + q3 + q4 + q5 + q6;
+    let result = "";
+    let description = "";
     console.log(resultNum);
-
+    if (resultNum >= 24 && resultNum < 32) {
+      result = "anwser1";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of _____ you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else if (resultNum >= 32 && resultNum < 40) {
+      result = "answer2";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of _____ you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else if (resultNum >= 40 && resultNum < 48) {
+      result = "answer3";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of _____ you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else if (resultNum >= 48 && resultNum < 56) {
+      result = "answer4";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of _____ you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else if (resultNum >= 56 && resultNum < 64) {
+      result = "answer5";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of _____ you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else if (resultNum >= 64 && resultNum <72)  {
+      result = "answer6";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of _____ you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    } else{
+      result = "answer7";
+      $(".output").hide();
+      $("#outputName").hide();
+      $("#outputDescription").hide();
+      $(".output").text(result).fadeIn(500);
+      $("#outputName").text(name + ", The kind of _____ you are is:").fadeIn(500);
+      $("#outputDescription").text(description).fadeIn(1000);
+    }
+    $("#other-quiz").fadeIn()
   });
 });
