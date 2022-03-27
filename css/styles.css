@@ -16,6 +16,8 @@ body  {
   width: 30%;
 }
 #startQuizBTN {
+  position: relative;
+  right: 15%;
   margin-top: 2%;
   background-color: antiquewhite;
   color: black;
@@ -115,10 +117,13 @@ body  {
 }
 #other-quiz {
   position: relative;
-  left: 68%;
+  left: 58%;
 }
 img {
   position: relative;
   left: 20%;
   width: 60%;
+}
+label  {
+  padding-right: 30%;
 }
