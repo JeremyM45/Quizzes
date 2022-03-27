@@ -22,7 +22,7 @@ body  {
   border: 1px solid black;
 }
 
-#lang-Quiz, .output, #outputDescription, #cheese-Quiz, #other-quiz, #thrd-Quiz {
+#lang-Quiz, .output, #outputDescription, #cheese-Quiz, #other-quiz, #thrd-Quiz, #outputBS, #outputS, #outputKT, #outputT, #outputC, #outputB, #outputIS {
   display: none;
 }
 #outputName {
@@ -116,4 +116,9 @@ body  {
 #other-quiz {
   position: relative;
   left: 68%;
+}
+img {
+  position: relative;
+  left: 20%;
+  width: 60%;
 }
